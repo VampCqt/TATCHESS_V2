@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="shortcut icon" href="../assets/media/favicon/T.png" type="image/x-icon">
+</head>
+
+<body class="container">
+
+    <!-- header_and_banner start -->
+
+    <div class="stats_backgr_2"></div>
+    <div class="stats_backgr">
+        <header class="logo">TATCHESS</header>
+        <div class="stats_banner">
+            <div class="banner_title">
+                <h1>СТАТИСТИКА ИГР</h1>
+            </div>
+            <div class="stats_buttons">
+                <a href="../pages/game_online.html" class="btn1">ИГРА ОНЛАЙН</a>
+                <a href="../pages/tatiana.html" class="btn2">О ПРОЕКТЕ</a>
+                <a href="../pages/game_stats.html" class="btn3">СТАТИСТИКА ИГР</a>
+            </div>
+            <div class="year_switcher">
+                <button class="year_button year_active">2024</button>
+                <button class="year_button">2023</button>
+                <button class="year_button">2022</button>
+                <button class="year_button">2021</button>
+                <button class="year_button">2020</button>
+                <button class="year_button">2019</button>
+            </div>
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                    const buttons = document.querySelectorAll('.year_button');
+
+                    buttons.forEach(button => {
+                        button.addEventListener('click', () => {
+                            // Удаляем класс active у всех кнопок
+                            buttons.forEach(btn => btn.classList.remove('year_active'));
+
+                            // Добавляем класс active к выбранной кнопке
+                            button.classList.add('year_active');
+                        });
+                    });
+                });
+
+            </script>
+            <div class="stats_search">
+                <input type="text" class="search_input" placeholder="Поиск спортсмена">
+                <img src="../assets/media/stats_banner/search.png" alt="">
+            </div>
+        </div>
+        <div class="stats_info container_2">
+            <div class="table-container container_2">
+                <table>
+                    <tr>
+                        <td class="position">1</td>
+                        <td class="name">Гукеш Доммараджу</td>
+                        <td><span class="wins">14 побед</span> <span class="losses">3 проигрыша</span> <span
+                                class="draws">2
+                                ничьи</span></td>
+                    </tr>
+                    <tr>
+                        <td class="position">2</td>
+                        <td class="name">Ян Непомнящий</td>
+                        <td><span class="wins">14 побед</span></td>
+                    </tr>
+                    <tr>
+                        <td class="position">3</td>
+                        <td class="name">Фабиано Каруана</td>
+                        <td><span class="wins">14 побед</span> <span class="losses">3 проигрыша</span> <span
+                                class="draws">2
+                                ничьи</span></td>
+                    </tr>
+                    <tr>
+                        <td class="position">4</td>
+                        <td class="name">Хикару Накамура</td>
+                        <td><span class="wins">14 побед</span> <span class="losses">3 проигрыша</span></td>
+                    </tr>
+                    <tr>
+                        <td class="position">5</td>
+                        <td class="name">Рамешбабу Прагнанандха</td>
+                        <td><span class="losses">3 проигрыша</span></td>
+                    </tr>
+                    <tr>
+                        <td class="position">6</td>
+                        <td class="name">Видит Гуджрати</td>
+                        <td><span class="wins">14 побед</span> <span class="losses">3 проигрыша</span></td>
+                    </tr>
+                    <tr>
+                        <td class="position">7</td>
+                        <td class="name">Алиреза Фируджа</td>
+                        <td><span class="losses">3 проигрыша</span></td>
+                    </tr>
+                    <tr>
+                        <td class="position">8</td>
+                        <td class="name">Ниджат Абасов</td>
+                        <td><span class="wins">14 побед</span> <span class="losses">3 проигрыша</span></td>
+                    </tr>
+                    <tr>
+                        <td class="position">9</td>
+                        <td class="name">Гукеш Доммараджу</td>
+                        <td><span class="wins">14 побед</span> <span class="losses">3 проигрыша</span></td>
+                    </tr>
+                    <tr>
+                        <td class="position">10</td>
+                        <td class="name">Ян Непомнящий</td>
+                        <td><span class="wins">14 побед</span></td>
+                    </tr>
+                    <tr>
+                        <td class="position">11</td>
+                        <td class="name">Фабиано Каруана</td>
+                        <td><span class="draws">2 ничьи</span></td>
+                    </tr>
+                    <tr>
+                        <td class="position">12</td>
+                        <td class="name">Хикару Накамура</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="position">13</td>
+                        <td class="name">Рамешбабу Прагнанандха</td>
+                        <td><span class="wins">14 побед</span> <span class="losses">3 проигрыша</span> <span
+                                class="draws">2
+                                ничьи</span></td>
+                    </tr>
+                    <tr></tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- footer start -->
+
+        <footer class="container_2 mt-100">
+            <div class="footer_line"></div>
+            <div class="footer_menu">
+                <div class="footer_logo">TATCHESS</div>
+                <div class="footer_buttons">
+                    <a href="../pages/game_online.html" class="btn1">ИГРА ОНЛАЙН</a>
+                    <a href="../pages/tatiana.html" class="btn2">О ПРОЕКТЕ</a>
+                    <a href="../pages/game_stats.html" class="btn3">СТАТИСТИКА ИГР</a>
+                </div>
+                <div class="contact_block">
+                    <a href="tel:+79169069966">+8(916)906-99-66</a>
+                    <div class="circle"></div>
+                    <a href="mailto:info@tatchess.ru">info@tatchess.ru</a>
+                </div>
+                <div class="social_icons">
+                    <img src="../assets/media/footer/vk.png" alt="VK">
+                    <img src="../assets/media/footer/ws.png" alt="WhatsApp">
+                    <img src="../assets/media/footer/tg.png" alt="Telegram">
+                </div>
+            </div>
+            <div class="footer_bottom_menu">
+                <a href="#">Согласие на обработку данных</a>
+                <a href="#">© tatchess. все права защищены</a>
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Дизайн и разработка</a>
+                <img src="../assets/media/footer/everytech.png" alt="EveryTech">
+            </div>
+        </footer>
+        <!-- footer end -->
+</body>
+
+</html>
